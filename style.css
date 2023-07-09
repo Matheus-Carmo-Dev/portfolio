@@ -55,8 +55,14 @@ body {
 .portfolio {
   margin-top: 64px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr; /* Definir uma única coluna como padrão */
   gap: 16px;
+}
+/*regra de mídia para telas maiores */
+@media screen and (min-width: 768px) {
+  .portfolio {
+    grid-template-columns: 2fr 1fr; /* Alterar para duas colunas */
+  }
 }
 
 .projetos {
